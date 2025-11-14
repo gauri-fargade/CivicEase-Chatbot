@@ -1,0 +1,12 @@
+{
+  "hello": "Hello! 👋 I’m CivicEase Help Bot. How can I assist you today?",
+  "complaint": "To file a complaint, go to the Complaint section in your dashboard and select the department related to your issue.",
+  "department": "We have separate departments for Water Supply & Drainage, Electricity, Maintenance, and Sanitation.",
+  "emergency": "In case of emergency, please contact: Police - 100 | Fire - 101 | Ambulance - 102 | Civic Helpline - 1800-123-456.",
+  "location": "Please share your area name, and I’ll tell you which department office is nearest.",
+  "feedback": "Was this answer helpful? Please type Yes or No.",
+  "register": "To register your company, visit the Registration section and fill in the required details. Our support team will verify and contact you.",
+  "status": "To check your complaint status, enter your complaint ID in the Complaint Status tab.",
+  "help": "You can ask me about departments, complaint process, emergency numbers, or location-based help.",
+  "thanks": "You’re welcome! 😊 Happy to help."
+}
