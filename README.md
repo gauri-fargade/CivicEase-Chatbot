@@ -25,11 +25,11 @@ This chatbot is planned to be integrated with the CivicEase app, which is used b
 1. Clone the repository:
 git clone <your-repo-url>
 
-text
+
 2. Navigate to the project directory:
 cd civicease-chatbot
 
-text
+
 3. Create and activate a virtual environment (optional but recommended):
 python -m venv venv
 
@@ -39,25 +39,16 @@ venv\Scripts\activate
 macOS/Linux
 source venv/bin/activate
 
-text
+
 4. Install dependencies:
 pip install -r requirements.txt
 
-text
+
 5. Run the app:
 python app.py
 
-text
-6. Open your browser to [http://localhost:5000](http://localhost:5000) and start chatting!
 
-## Contributing
+6. Open your browser to localhost and start chatting!
 
-Contributions are welcome! Please fork the repository and submit pull requests for improvements or bug fixes.
-
-## License
-
-This project is licensed under the MIT License.
-
----
 
 Made with ❤️ to help Nashik citizens interact with their municipal corporation effectively.
