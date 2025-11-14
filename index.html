@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CivicEase Help Bot</title>
+<style>
+  /* Reset & base styles */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e8f0fe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  /* Chat container */
+  #chat-container {
+    width: 400px;
+    max-width: 95vw;
+    height: 600px;
+    background: white;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  /* Header */
+  #header {
+    background: #0052cc;
+    color: white;
+    padding: 16px 24px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    user-select: none;
+  }
+
+  /* Chat messages area */
+  #chatbox {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+    background: #f5f8ff;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  /* Message bubbles */
+  .bot-msg, .user-msg {
+    max-width: 80%;
+    padding: 14px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    line-height: 1.4;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    box-shadow: 0 3px 8px rgba(0, 0, 50, 0.1);
+  }
+
+  /* Bot messages on left */
+  .bot-msg {
+    background-color: #d2e3fc;
+    color: #0d1a42;
+    align-self: flex-start;
+    border-bottom-left-radius: 4px;
+  }
+
+  /* User messages on right */
+  .user-msg {
+    background-color: #0052cc;
+    color: white;
+    align-self: flex-end;
+    border-bottom-right-radius: 4px;
+  }
+
+  /* Input area */
+  #input-area {
+    display: flex;
+    padding: 12px 16px;
+    gap: 12px;
+    border-top: 1px solid #ddd;
+    background-color: white;
+  }
+
+  #user-input {
+    flex-grow: 1;
+    font-size: 1rem;
+    padding: 10px 16px;
+    border-radius: 25px;
+    border: 1px solid #bbb;
+    outline-offset: 2px;
+    transition: border-color 0.3s ease;
+  }
+
+  #user-input:focus {
+    border-color: #0052cc;
+  }
+
+  #send-btn {
+    background-color: #0052cc;
+    border: none;
+    padding: 10px 18px;
+    color: white;
+    font-weight: 700;
+    border-radius: 25px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease;
+  }
+
+  #send-btn:hover {
+    background-color: #003d99;
+  }
+
+  /* Scrollbar styling */
+  #chatbox::-webkit-scrollbar {
+    width: 10px;
+  }
+  #chatbox::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+  #chatbox::-webkit-scrollbar-thumb {
+    background: #c4d0f7;
+    border-radius: 10px;
+  }
+  #chatbox::-webkit-scrollbar-thumb:hover {
+    background: #a0b8f5;
+  }
+</style>
+</head>
+<body>
+  <div id="chat-container">
+    <div id="header">CivicEase Help Bot</div>
+    <div id="chatbox"></div>
+    <div id="input-area">
+      <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off" />
+      <button id="send-btn">Send</button>
+    </div>
+  </div>
+
+  <script src="/static/script.js" defer></script>
+</body>
+</html>
